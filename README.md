@@ -29,6 +29,6 @@ This site is designed to be clean, responsive, and modern. It includes a dark/li
 ## 🌍 Live Website
 
 You can view the live version of my portfolio at:  
-🔗 [View My Portfolio Website](https://vansh935.github.io/thevanshfolio/)
+🔗 [View My Portfolio Website](https://vansh935.github.io/portfolio_web/)
 
 I hope you enjoy exploring my portfolio as much as I enjoyed building it. Let’s connect and create something amazing together!
