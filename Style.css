@@ -13,7 +13,7 @@ body {
 #theme-switch {
   height: 20px;
   width: 20px;
-  background-color: #edede9;
+  background-color: #eeeeee;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@ body {
 }
 
 .darkmode header {
-  background-color: #ced4da !important;
+  background-color: #d7dace !important;
 }
 
 .darkmode .Right ul li a {
@@ -210,6 +210,7 @@ nav {
 .About-Section {
   display: flex;
   justify-content: space-around;
+  margin-top: -50px;
 }
 
 #AbMe {
@@ -333,49 +334,127 @@ nav {
   color: #f2f2f2;
 }
 
-/* Project Section */
-.Top-line span {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  font-weight: 600;
-  margin-top: 240px;
-}
+/* Certificate-Section */
 
-.Top-line p {
+.Certificate-Section span {
   display: flex;
   justify-content: center;
-  font-size: smaller;
+  font-size: xx-large;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 100px;
+}
+.Certificate-Section .under-p{
+  display: flex;
+  justify-content: center;
+  font-size: small;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px;
+  margin-top: 80px;
 }
 
 .card {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
 }
 
-.empty-card {
-  height: 200px;
-  width: 350px;
-  background-color: #111;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(245, 242, 242, 0.904);
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
 }
 
-.empty-card::before {
-  content: "Coming Soon";
-  font-size: medium;
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 300px;
+  height: 240px;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px #160559;
+}
+ .darkmode .card-front{
+border: 3px solid #04052e;
+box-shadow:5px 5px 5px #7d7c7a;
+}
+.card-front {
+  background-size: contain;
+  background-position: center;
+}
+
+.card-back {
+  background: #ccd5ae;
+  transform: rotateY(180deg);
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 80px;
-  margin-left: -30px;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+  text-align: center;
+  font-weight: 500;
+  color: #000;
+}
+.card-back i{
+  margin-right: 10px;
+}
+.card-back button {
+  padding: 10px 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: small;
+  font-weight: bold;
+}
+.card-back button i{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.card-back button:hover {
+  background-color: #0056b3;
 }
 
-.darkmode .empty-card {
-  background-color: #ced4da;
-  color: #001233;
-  font-weight: 600;
-  font-size: x-large;
+#pdf-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+#pdf-frame {
+  width: 90vw;
+  height: 90vh;
+  background: white;
+  border-radius: 10px;
+}
+
+#pdf-modal .close {
+  position: absolute;
+  top: -85px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
 }
 
 /* Contact Section */
@@ -448,13 +527,19 @@ form button:hover {
   color: #f2f2f2;
   margin-left:10px ;
   text-decoration: underline 1px solid #f2f2f2;
+  font-size: large;
 }
-
+.darkmode .Contact-Info a{
+  color: #000;
+}
+.darkmode .Contact-Info a:hover {
+  color: #0077ff;
+  text-decoration: underline 1px solid #000;
+}
 .Contact-Info a:hover {
   color: #fce063;
   text-decoration: underline 1px #fce063;
 }
-
 .scroll-animate {
   opacity: 0;
   transition: all 1s ease-out;
@@ -663,44 +748,17 @@ margin-left: 10px;
     border: none;
   }
 
-  /* Projects Section */
-  .Project-Section div {
-    display: flex;
+  /* Certificate-Section*/
+
+  .card-container {
     flex-direction: column;
     align-items: center;
   }
-
-  .Project-Section .Top-line span {
-    font-size: 1.3rem;
-    margin-top: 0%;
+  .Certificate-Section .under-p{
+    font-size: x-small;
+    margin-left: 10px;
   }
 
-.project-card{
-  height: 130px;
-  width: 200px;
-  margin-top: 30px;
-}
-.project-card:first-child{
-  margin-top: -20px;
-}
-.project-card:last-child{
-  margin-bottom: -100px;
-}
-  .Project-Section p {
-    font-size: 1rem;
-    width: 90%;
-    margin-top: 10px;
-    text-align: center;
-  }
-  .empty-card::before {
-    content: "Coming Soon";
-    font-size: medium;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    font-size: small;
-    margin-left: 0px;
-  }
   /* Contact Section */
   .contact-container {
     max-width: 190px;
