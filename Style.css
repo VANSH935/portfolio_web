@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Diphylleia&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Playfair+Display:wght@400..900&family=Roboto+Slab:wght@100..900&family=Slabo+27px&family=Teko:wght@300..700&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   background-color: #02040f;
   color: #f8f9fa;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-style: normal;
   scroll-behavior: smooth;
 }
 
@@ -409,6 +410,7 @@ nav {
   height: 240px;
   border-radius: 15px;
   backface-visibility: hidden;
+  font-size: medium;
   overflow: hidden;
   box-shadow: 5px 5px 5px #160559;
 }
@@ -436,7 +438,7 @@ box-shadow:5px 5px 5px #7d7c7a;
   color: #000;
 }
 .card-back i{
-  margin-right: 10px;
+  margin-right: 1px;
 }
 .card-back button {
   padding: 10px 10px;
