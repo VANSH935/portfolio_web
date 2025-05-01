@@ -1,5 +1,4 @@
-// Theme Switcher (Dark Mode)
-
+// ThemeSwitch
 let darkmode = localStorage.getItem('darkmode');
 const themeSwitch = document.getElementById('theme-switch');
 
@@ -19,37 +18,34 @@ if (darkmode === "active") {
 
 themeSwitch.addEventListener("click", () => {
   darkmode = localStorage.getItem('darkmode');
-  if (darkmode !== "active") {
-    enableDarkmode();
-  } else {
-    disableDarkmode();
-  }
+  darkmode !== "active" ? enableDarkmode() : disableDarkmode();
 });
 
-//  Mobile Menu Toggle
 
+// MoblieMenu
 
-const menuToggle = document.getElementById('menu-toggle');
-const closeMenu = document.getElementById('close-menu');
-const navLinks = document.getElementById('nav-links');
-const navItems = navLinks.querySelectorAll('a');
+  const menuToggle = document.getElementById('menu-toggle');
+  const closeMenu = document.getElementById('close-menu');
+  const navLinks = document.getElementById('nav-links');
+  const navItems = navLinks.querySelectorAll('a');
 
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.add('active');
-});
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.add('active');
+  });
 
-closeMenu.addEventListener('click', () => {
-  navLinks.classList.remove('active');
-});
-
-navItems.forEach(link => {
-  link.addEventListener('click', () => {
+  closeMenu.addEventListener('click', () => {
     navLinks.classList.remove('active');
   });
-});
 
-// Welcome Typing Animation
+  navItems.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+    });
+  });
 
+
+
+// WelcomeAnimation
 document.addEventListener("DOMContentLoaded", function () {
   new Typed('#element', {
     strings: ['Welcome To My Portfolio'],
@@ -58,50 +54,42 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: true
   });
 });
-
-// Smooth Scrolling on Anchor Click
-
+// scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
+    
     const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      window.scrollTo({
-        top: target.offsetTop - 90,
-        behavior: 'smooth'
-      });
-    }
+    
+    window.scrollTo({
+      top: target.offsetTop - 90,  
+      behavior: 'smooth'
+    });
   });
 });
 
-// About Section Scroll Animation
-
+// About-Animation
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('animate-active');
     } else {
-      entry.target.classList.remove('animate-active');
+      entry.target.classList.remove('animate-active'); 
     }
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.scroll-animate').forEach(el => {
-  observer.observe(el);
-});
+document.querySelectorAll('.scroll-animate').forEach(el => observer.observe(el));
 
-// Skills Section Load Animation
-
+// Skills section Animation
 window.addEventListener("DOMContentLoaded", () => {
-  const skills = document.querySelectorAll(".ScrollAnimate");
-  skills.forEach((el, index) => {
+  const elements = document.querySelectorAll(".ScrollAnimate");
+  elements.forEach((el, i) => {
     setTimeout(() => {
       el.classList.add("animate-active");
-    }, index * 300);
+    }, i * 300);
   });
 });
-
-//  PDF Modal Viewer
 
 function viewPDF(pdfUrl) {
   const modal = document.getElementById('pdf-modal');
@@ -115,3 +103,6 @@ function closePDF() {
   modal.style.display = 'none';
   document.getElementById('pdf-frame').src = '';
 }
+
+
+
