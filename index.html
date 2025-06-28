@@ -1,160 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="Stylesheet" href="Style.css">
-    <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vansh | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <div class="toggle-container" id="theme-switch">
-      <div class="toggle-circle">
-        <i class="fa-solid fa-sun"></i>
-        <i class="fa-solid fa-moon"></i>
-      </div>
-    </div>
-    <nav>
-      <div class="Left" id="logo-container">
-        <h2>Vansh's Portfolio</h2>
-      </div>
-      <div class="menu-toggle" id="menu-toggle">
-        <i class="fa-solid fa-bars fa-lg"></i>
-      </div>
-      <div class="Right" id="nav-links">
-        <div class="mobile-header">
-          <h2>Vansh's Portfolio</h2>
-          <div class="close-menu" id="close-menu">
-            <i class="fas fa-times fa-xl"></i>
-          </div>
+
+<header>
+  <div class="logo">Vansh<span>.</span></div>
+  <nav>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></div>
+  </nav>
+</header>
+
+<section id="home" class="home-section">
+  <h1 class="fade-in">I'm <span>Vansh Sharma</span></h1>
+  <p class="fade-in delay">Student | Web Developer | Problem Solver</p>
+  <a href="#contact" class="btn fade-in delay2">Let's Talk</a>
+</section>
+
+<section id="about" class="about-section">
+  <h2 class="section-title">About Me</h2>
+  <p>
+   Hello, I'm Vansh Sharma, a passionate and dedicated Artificial Intelligence and Robotics student at Gyan Ganga Institute of Technology & Sciences (GGITS), Jabalpur. I am currently in my second year, 4th semester (Batch 2023-2027). I specialize in web development, programming, and data structures, with hands-on experience in creating responsive websites and solving complex coding challenges. I am constantly exploring AI applications, robotics innovations, and data analysis to enhance my technical skills. I enjoy working on projects that combine creativity with functionality, aiming to build solutions that are both efficient and user-friendly.In my free time, I enjoy reading books, playing basketball, and working on DIY projects. I'm excited to collaborate and contribute to dynamic tech environments, bringing problem-solving skills and a growth mindset to every challenge.
+  </p>
+</section>
+
+<section id="skills" class="skills-timeline-horizontal">
+    <h2>My Skills</h2>
+
+    <div class="timeline-horizontal">
+        <div class="timeline-item">
+            <div class="circle">1</div>
+            <p>HTML & CSS</p>
         </div>
-        <ul>
-          <li><a href="#Home-SEC">Home</a></li>
-          <li><a href="#About-SEC">About</a></li>
-          <li><a href="#Skills-SEC">Skills</a></li>
-          <li><a href="#Certificates-SEC">Certificates</a></li>
-          <li><a href="#Contact-SEC">Contact Me</a></li> 
-        </ul>
-      </div>
-      
-    </nav>
-  </header>
-<main>
-    <section class="Home-section" id="Home-SEC">
-        <div class="Home-Leftsection">
-            <div class="elt"><span id="element"></span>
-            </div>
-            <h3>"Hi, I'm <span class="name">Vansh Sharma"</span></h3>
-            <div class="intro-line"><p>– coding the future with AI, robotics, and creativity.</p></div>
-            </div>
-        </div> 
-        <div class="Home-Rightsection">
-            <img src="Images/robo-img.png">
+
+        <div class="timeline-item">
+            <div class="circle">2</div>
+            <p>JavaScript</p>
         </div>
-      </section>
-<section class="About-Section" id="About-SEC">
-    <p id="AbMe"class="scroll-animate slide-in-left" >ABOUT ME</p>
-<div class="About-Rightsection">
-    <h1 class="scroll-animate slide-in-right">Passionate Web Developer & Problem Solver</h1>
-  <p class="scroll-animate slide-in-right">Hello, I'm Vansh Sharma, a passionate and dedicated Artificial Intelligence and Robotics student at Gyan Ganga Institute of Technology & Sciences (GGITS), Jabalpur. I am currently in my second year, 4th semester (Batch 2023-2027). I specialize in web development, programming, and data structures, with hands-on experience in creating responsive websites and solving complex coding challenges. I am constantly exploring AI applications, robotics innovations, and data analysis to enhance my technical skills. I enjoy working on projects that combine creativity with functionality, aiming to build solutions that are both efficient and user-friendly.In my free time, I enjoy reading books, playing basketball, and working on DIY projects. I'm excited to collaborate and contribute to dynamic tech environments, bringing problem-solving skills and a growth mindset to every challenge.
-    </p>
-    <a class="btn-CV" href="All pdf/vansh sharma cv (1).pdf">MY CV<i class="fa fa-download"></i></a>
-</div>
+
+        <div class="timeline-item">
+            <div class="circle">4</div>
+            <p>Python Programming</p>
+        </div>
+
+        <div class="timeline-item">
+            <div class="circle">5</div>
+            <p>Java & C++</p>
+        </div>
+    </div>
 </section>
-<section class="Skills-section" id="Skills-SEC">
-  <h1 class="scroll-animate flip-in">My Skills</h1>
-  <p class="scroll-animate zoom-fade">Here are the technologies I’m proficient in.</p>
-  <div class="skills-container">
-    <div class="skills-category scroll-animate flip-in">
-      <h3>Frontend</h3>
-      <ul>
-        <li><i class="icon fab fa-html5"></i> HTML – Clean and structured user-friendly pages.</li>
-        <li><i class="icon fab fa-css3-alt"></i> CSS – Responsive designs using Flexbox & Grid.</li>
-        <li><i class="icon fab fa-js"></i> JavaScript – Modern ES6+ and React basics.</li>
-      </ul>
-    </div>
-    <div class="skills-category scroll-animate flip-in">
-      <h3>Backend</h3>
-      <ul>
-        <li><i class="icon fab fa-java"></i> Java (DSA) – Strong DSA skills via LeetCode & Codeforces.</li>
-        <li><i class="icon fas fa-code"></i> C++ – Basic syntax, loops, functions, and problem-solving.</li>
-      </ul>
-    </div>
-    <div class="skills-category scroll-animate flip-in">
-      <h3>Other</h3>
-      <ul>
-        <li><i class="icon fas fa-laptop-code"></i> Core programming concepts & logic building.</li>
-        <li><i class="icon fas fa-brain"></i> Daily practice on LeetCode & Codeforces.</li>
-      </ul>
-    </div>
+
+
+
+<section id="projects" class="projects-section">
+  <h2 class="section-title">Projects</h2>
+  <div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>A modern responsive portfolio to showcase my skills & work.</p>
+  </div>
+  <div class="project-card">
+    <h3>Robotics Mini Project</h3>
+    <p>Basic autonomous robot prototype for obstacle detection.</p>
   </div>
 </section>
-<section class="Certificate-Section" id="Certificates-SEC">
-<div id="pdf-modal" class="modal">
-  <span class="close" onclick="closePDF()">&times;</span>
-  <iframe id="pdf-frame" frameborder="0"></iframe>
-</div>
-<span>Certifications</span>
-<p class="under-p">Certified achievements from globally recognized institutions, reflecting my evolving technical skillset and commitment to lifelong learning.</p>
-<div class="card-container">
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front" style="background-image: url(Images/Html\,css\ and\ js.png);"></div>
-      <div class="card-back">
-        <p><i class="fa-solid fa-brain" style="color: #ff00bb;"></i> Web Development
-          Completed HTML, CSS, and JavaScript for Web Developers from Johns Hopkins University (via Coursera). Gained a strong foundation in frontend technologies and responsive design.</p>
-        <button onclick="viewPDF('All pdf/html,css,js.pdf')"><i class="fa-solid fa-file fa-lg" style="color: #000000;"></i>View Full Certificate</button>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front" style="background-image: url('Images/Inro-machine.png');"></div>
-      <div class="card-back">
-        <p><i class="fa-solid fa-robot" style="color: #ef4801;"></i>Machine Learning
-          Completed Introduction to Machine Learning on AWS offered by Amazon Web Services (via Coursera). Gained insight into ML workflows and how to build ML solutions on AWS.</p>
-        <button onclick="viewPDF('All pdf/Intro Machine learning.pdf')"><i class="fa-solid fa-file fa-lg" style="color: #000000;"></i>View Full Certificate</button>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front" style="background-image: url('Images/into-packet.png');"></div>
-      <div class="card-back">
-        <p><i class="fa-solid fa-globe" style="color: #00c4eb;"></i> Networking Skills
-          Completed Introduction to Packet Tracer from Cisco Networking Academy. Learned basic networking concepts and hands-on simulation using Cisco Packet Tracer.</p>
-        <button onclick="viewPDF('All pdf/Introduction to Packet Tracer.pdf')"><i class="fa-solid fa-file fa-lg" style="color: #000000;"></i>View Full Certificate</button>
-      </div>
-    </div>
-  </div>
-</div>
-  </section>
-<section class="Contact-Section" id="Contact-SEC">
-    <span>Contact Me</span>
-    <h3>feel free to reach out if you'd like to work together.</h3>   
-    <div class="contact-container">
-     <form action="https://api.web3forms.com/submit" method="POST">
-    <input type="text" name="name" placeholder="Your Name"autocomplete="off" required>
-    <input type="email" name="email" placeholder="Your Email"autocomplete="off" required>
-    <textarea name="message" rows="5" placeholder="Your Message"autocomplete="off" required></textarea>
-    <button type="submit">Send Message</button>
-<input type="hidden" name="access_key" value="ca764794-8d93-4b42-8041-0e8804f8a8b5"> 
-</form> </div>
-<div class="Contact-Info">
-    <ul>
-    <li><i class="fa-solid fa-envelope fa-lg" style="color: #f2f2f2 #000000;"></i><a href="mailto:vanshsharmas92005@gmail.com"target="_blank">Email</a></li>
-    <li><i class="fa-brands fa-linkedin fa-lg" style="color: #f2f2f2 #000000;"></i><a href="https://www.linkedin.com/in/vansh-sharma-67832330" target="_blank">Linkedin</a></li>
-    <li><i class="fa-brands fa-github fa-lg" style="color: #f2f2f2 #000000;"></i><a href="https://github.com/VANSH935"target="_blank">GitHub</a></li>
-    <li><i class="fa-brands fa-twitter" style="color: #f2f2f2 #000000"></i><a href="https://x.com/vanshsh28598810"target="_blank">Twitter</a></li>
-</ul>
-  </div>
+
+<section id="contact" class="contact-section">
+  <h2 class="section-title">Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
 </section>
-</main>
+
+<footer>
+  <p>© 2025 Vansh Sharma | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script>
-</script>
-<script src="Script.js"></script>
 </html>
