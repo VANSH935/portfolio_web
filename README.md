@@ -10,14 +10,12 @@ This site is designed to be clean, responsive, and modern. It includes a dark/li
 
 - 👋 About Me  
 - 🛠 Skills  
-- 🏅 Certificates  
+- 🏅 Projects
 - 📬 Contact  
 
 ## 🌟 Features
 
 - Fully responsive for all devices  
-- Light & Dark theme toggle  
-- Organized certificate display  
 - Built with simple, clean code
 
 ## 🛠 Built Using
