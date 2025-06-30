@@ -42,7 +42,6 @@ header {
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  z-index: 1100;
 }
 
 .menu-toggle .bar {
@@ -64,7 +63,7 @@ header {
 
 .logo {
   margin-left: 60px;
-  font-size: 17px;
+   font-size: 17px;
 }
 
 .nav-links a {
@@ -95,7 +94,6 @@ section {
   margin-top: 10px;
   font-size: 1.3rem;
 }
-
 .social-icons {
   display: flex;
   gap: 40px;
@@ -104,7 +102,7 @@ section {
 .icon {
   width: 70px;
   height: 70px;
-  border: 2px solid rgba(115, 174, 233, 0.973);
+border: 2px solid rgba(115, 174, 233, 0.973);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -112,11 +110,9 @@ section {
   animation: glow 5s infinite ease-in-out;
   margin-top: 20px;
 }
-
-.icon:hover {
+.icon:hover{
   border: 2px solid #fce063;
 }
-
 .icon img {
   width: 30px;
   height: 30px;
@@ -143,12 +139,13 @@ section {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.resume:active {
+.reume:active {
   transform: scale(0.98);
 }
 
 .section-title {
   font-size: 2.4rem;
+ 
 }
 
 .skills-section {
@@ -165,7 +162,7 @@ section {
 .skills-category h3 {
   font-size: 24px;
   margin-bottom: 30px;
-  text-decoration: #fff underline;
+  text-decoration:#fff underline;
   color: #fce063;
 }
 
@@ -175,6 +172,24 @@ section {
   flex-wrap: wrap;
   gap: 25px;
 }
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skill-card {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: 120px;
+  height: 130px;
+}
+
+
 
 .skill-card {
   background: #fff;
@@ -222,12 +237,10 @@ section {
   gap: 15px;
   width: 300px;
 }
-
-.contact-section h2 {
+.contact-section h2{
   font-size: 2.9rem;
   margin-bottom: 30px;
 }
-
 input,
 textarea {
   padding: 15px;
@@ -242,7 +255,6 @@ footer {
   padding: 7px;
   background: #000000;
 }
-
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -256,7 +268,6 @@ footer {
 .fade-in.delay2 {
   animation-delay: 1s;
 }
-
 .btn {
   background: #fce063;
   color: #0a0a0a;
@@ -275,13 +286,14 @@ footer {
   }
 }
 
-/* Responsive Menu Fix */
 
 @media (max-width: 768px) {
-
-  .menu-toggle {
-    display: flex;
-    z-index: 1100;
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
   }
 
   .logo {
@@ -293,24 +305,47 @@ footer {
     flex-direction: column;
     background: #111;
     position: absolute;
-    right: 10px;
+    right: 0;
     top: 60px;
     padding: 20px;
     width: 200px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
   }
 
   .nav-links.show {
     display: flex;
   }
 
-  .nav-links a {
-    color: white;
+  .menu-toggle {
+    display: block;
   }
 
   .skills-grid {
     justify-content: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100px;
+    top: 60px;
+    right: -35px;
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(182, 233, 241, 0.363);
+    gap: 15px;
+  }
+
+  .nav-links a {
+    color: white;
+  }
+
+  .nav-links.show {
+    display: flex;
   }
 }
