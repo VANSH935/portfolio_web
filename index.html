@@ -1,95 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vansh | Portfolio</title>
-  <link rel="stylesheet" href="Style.css">
-  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+  <title>Vansh Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <div class="logo">Vansh<span>.</span></div>
-  <nav>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></div>
-  </nav>
-</header>
-
-<section id="home" class="home-section">
-  <h1 class="fade-in">I'm <span>Vansh Sharma</span></h1>
-  <p class="fade-in delay">Student | Web Developer | Problem Solver</p>
-  <a href="#contact" class="btn fade-in delay2">Let's Talk</a>
-</section>
-
-<section id="about" class="about-section">
-  <h2 class="section-title">About Me</h2>
-  <p>
-   Hello, I'm Vansh Sharma, a passionate and dedicated Artificial Intelligence and Robotics student at Gyan Ganga Institute of Technology & Sciences (GGITS), Jabalpur. I am currently in my second year, 4th semester (Batch 2023-2027). I specialize in web development, programming, and data structures, with hands-on experience in creating responsive websites and solving complex coding challenges. I am constantly exploring AI applications, robotics innovations, and data analysis to enhance my technical skills. I enjoy working on projects that combine creativity with functionality, aiming to build solutions that are both efficient and user-friendly.In my free time, I enjoy reading books, playing basketball, and working on DIY projects. I'm excited to collaborate and contribute to dynamic tech environments, bringing problem-solving skills and a growth mindset to every challenge.
-  </p>
-</section>
-
-<section id="skills" class="skills-timeline-horizontal">
-    <h2>My Skills</h2>
-
-    <div class="timeline-horizontal">
-        <div class="timeline-item">
-            <div class="circle">1</div>
-            <p>HTML & CSS</p>
-        </div>
-
-        <div class="timeline-item">
-            <div class="circle">2</div>
-            <p>JavaScript</p>
-        </div>
-
-        <div class="timeline-item">
-            <div class="circle">4</div>
-            <p>Python Programming</p>
-        </div>
-
-        <div class="timeline-item">
-            <div class="circle">5</div>
-            <p>Java & C++</p>
-        </div>
+  <header>
+    <div class="logo">My Portfolio</div>
+    <div class="progress-bar"></div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </div>
-</section>
+    <nav class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home-section">
+    <h1 class="fade-in">I'm <span>Vansh Sharma</span></h1>
+    <p class="fade-in delay">Student | Web Developer | Problem Solver</p>
+
+    <div class="social-icons fade-in delay2">
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/yourprofile" target="_blank" class="icon">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="50"
+          style="filter: invert(1);">
+      </a>
+      <a href="mailto:youremail@example.com" class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+      </a>
+    </div>
+
+  </section>
+
+
+  <section id="about" class="about-section">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      Hello, I'm Vansh Sharma, a passionate and dedicated Artificial Intelligence and Robotics student at Gyan Ganga
+      Institute of Technology & Sciences (GGITS), Jabalpur. I am currently in my second year, 4th semester (Batch
+      2023-2027). I specialize in web development, programming, and data structures, with hands-on experience in
+      creating responsive websites and solving complex coding challenges. I am constantly exploring AI applications,
+      robotics innovations, and data analysis to enhance my technical skills. I enjoy working on projects that combine
+      creativity with functionality, aiming to build solutions that are both efficient and user-friendly.In my free
+      time, I enjoy reading books, playing basketball, and working on DIY projects. I'm excited to collaborate and
+      contribute to dynamic tech environments, bringing problem-solving skills and a growth mindset to every challenge.
+    </p>
+    <a href="All pdf/My-Resume.pdf" class="resume">Download Resume</a>
+  </section>
 
 
 
-<section id="projects" class="projects-section">
-  <h2 class="section-title">Projects</h2>
-  <div class="project-card">
-    <h3>Portfolio Website</h3>
-    <p>A modern responsive portfolio to showcase my skills & work.</p>
-  </div>
-  <div class="project-card">
-    <h3>Robotics Mini Project</h3>
-    <p>Basic autonomous robot prototype for obstacle detection.</p>
-  </div>
-</section>
+  <section id="skills" class="skills-section">
+    <h2>SKILLS</h2>
 
-<section id="contact" class="contact-section">
-  <h2 class="section-title">Contact Me</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" rows="4" required></textarea>
-    <button type="submit" class="btn">Send Message</button>
-  </form>
-</section>
+    <div class="skills-category">
+      <h3>Technologies</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+          <p>HTML</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+          <p>CSS</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript">
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+          <p>Node.js</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+          <p>Java</p>
+        </div>
+      </div>
+    </div>
 
-<footer>
-  <p>© 2025 Vansh Sharma | All Rights Reserved</p>
-</footer>
 
-<script src="script.js"></script>
+
+    <div class="skills-category">
+      <h3>Tools & Platforms</h3>
+      <div class="skills-grid">
+        
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+          <p>GitHub</p>
+        </div>
+        
+        <div class="skill-card">
+          <img src="https://cdn.iconscout.com/icon/free/png-512/leetcode-3521542-2944960.png?f=webp&w=256"
+            alt="LeetCode" style="width: 50px;">
+          <p>LeetCode</p>
+        </div>
+        
+        <div class="skill-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Figma" style="width: 50px;">
+          <p>Figma</p>
+        </div>
+        
+        <div class="skill-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+          <p>VS Code</p>
+        </div>
+        
+        <div class="skill-card" style="width: 100px; padding: 10px;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ"
+            style="width: 50px;">
+          <p style="font-size: 14px;">IntelliJ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="projects" class="projects-section">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A modern responsive portfolio to showcase my skills & work.</p>
+    </div>
+    <div class="project-card">
+      <h3>Robotics Mini Project</h3>
+      <p>Basic autonomous robot prototype for obstacle detection.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Contact Me</h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="ca764794-8d93-4b42-8041-0e8804f8a8b5">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Vansh Sharma | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
