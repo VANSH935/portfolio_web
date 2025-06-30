@@ -1,6 +1,15 @@
-const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  const scrollPercent = (scrollTop / docHeight) * 100;
 
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('show');
+  document.querySelector('.progress-bar').style.width = scrollPercent + '%';
 });
+document.title = "Vansh's Portfolio";
+
+const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
