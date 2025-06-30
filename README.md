@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio Website
 
-Welcome to my personal portfolio website — a space where I share who I am, my skills, and the certifications I’ve earned along my learning journey.
+Welcome to my personal portfolio website — a space where I share who I am, my skills, and the projects I’ve earned along my learning journey.
 
 ## 📌 About This Site
 
