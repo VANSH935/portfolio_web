@@ -5,11 +5,20 @@ window.addEventListener('scroll', () => {
 
   document.querySelector('.progress-bar').style.width = scrollPercent + '%';
 });
+
 document.title = "Vansh's Portfolio";
 
 const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.getElementById('nav-links');
+const navLinks = document.getElementById('nav-links');
 
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+const links = navLinks.querySelectorAll('a');
+
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('show');
   });
+});
