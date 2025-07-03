@@ -71,6 +71,36 @@ header {
   text-decoration: none;
   font-size: 17px;
 }
+#custom-alert {
+  position: fixed;
+  top: 7%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  background: #000;
+  padding: 10px 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1000;
+  display: none;
+}
+
+#custom-alert p {
+  margin-bottom: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: #f2f2f2;
+}
+
+#custom-alert button {
+  padding: 5px 20px;
+  background: #444;
+  color: #f2f2f2;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 
 section {
   min-height: 100vh;
@@ -347,5 +377,18 @@ footer {
 
   .nav-links.show {
     display: flex;
+  }
+   #custom-alert {
+    width: 80%;
+    padding: 15px 20px;
+  }
+
+  #custom-alert p {
+    font-size: 16px;
+  }
+
+  #custom-alert button {
+    padding: 5px 10px;
+    font-size: 14px;
   }
 }
