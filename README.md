@@ -1,32 +1,35 @@
-# 🌐 Personal Portfolio Website
+🌐 Personal Portfolio Website
+Welcome to my personal portfolio — a place to showcase my skills, projects, and journey as a student developer.
 
-Welcome to my personal portfolio website — a space where I share who I am, my skills, and the projects I’ve earned along my learning journey.
+📌 About This Site
+This is a clean, responsive, and modern portfolio with a dark/light theme toggle. It provides a quick view of my work, skills, and easy ways to connect with me.
 
-## 📌 About This Site
+🧾 Sections Included
+👋 About Me
+🛠 Skills
+🏅 Projects
+📬 Contact
 
-This site is designed to be clean, responsive, and modern. It includes a dark/light theme switcher for better accessibility and offers a quick way to view my credentials and get in touch.
+🌟 Features
+-> Fully responsive for all devices
+-> Dark/Light mode toggle
+-> Clean and simple design
+-> Custom alert box for better user interaction
+-> Built with pure HTML, CSS, and JavaScript
 
-## 🧾 Sections Included
+🔄 Recent Updates
+-> Added custom alert box for navbar clicks
+-> Alert prevents unnecessary clicks if already on the same section
+-> Improved responsive design for the alert box
+-> Small UI adjustments for a cleaner look
+-> Optimized code structure for better readability
 
-- 👋 About Me  
-- 🛠 Skills  
-- 🏅 Projects
-- 📬 Contact  
+🛠 Built Using
+HTML5
+CSS3
+JavaScript
 
-## 🌟 Features
-
-- Fully responsive for all devices  
-- Built with simple, clean code
-
-## 🛠 Built Using
-
-- HTML5  
-- CSS3   
-- JavaScript.
-  
-## 🌍 Live Website
-
-You can view the live version of my portfolio at:  
-🔗 [View My Portfolio Website](https://vansh935.github.io/portfolio_web/)
+🌍 Live Website
+🔗 View My Portfolio Website
 
 I hope you enjoy exploring my portfolio as much as I enjoyed building it. Let’s connect and create something amazing together!
