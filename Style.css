@@ -290,7 +290,6 @@ border: 2px solid rgba(115, 174, 233, 0.973);
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
   position: relative;
 }
-
 .project-card:hover {
   transform: scale(1.2);
   box-shadow: 0 5px 15px #bad7f2;
@@ -305,12 +304,6 @@ border: 2px solid rgba(115, 174, 233, 0.973);
   align-content: center;
   
 }
-
-
-
-
-
-
 .contact-section form {
   display: flex;
   flex-direction: column;
@@ -375,7 +368,9 @@ footer {
     width: 100%;
     z-index: 1000;
   }
-
+.project-cards {
+  display: inline;
+}
   .logo {
     margin-left: 10px;
   }
