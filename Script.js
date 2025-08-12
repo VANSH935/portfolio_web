@@ -5,6 +5,18 @@ window.addEventListener('scroll', () => {
 
   document.querySelector('.progress-bar').style.width = scrollPercent + '%';
 });
+
+function downloadResume() {
+  if (confirm("Do you want to download the resume?")) {
+    const link = document.createElement('a');
+    link.href = 'My.resume.pdf'; // your PDF path
+    link.download = 'Vansh_Sharma_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+}
+
 document.title = "Vansh's Portfolio";
 
 const menuToggle = document.getElementById('menu-toggle');
