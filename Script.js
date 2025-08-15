@@ -16,17 +16,22 @@ function downloadResume() {
     document.body.removeChild(link);
   }
 }
-
 document.title = "Vansh's Portfolio";
 
 const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.getElementById('nav-links');
+const navLinks = document.getElementById('nav-links');
 
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+let links = document.querySelectorAll('.nav-link');
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('show');
   });
+});
 
-  let links = document.querySelectorAll('.nav-link');
 let alertBox = document.getElementById('custom-alert');
 let alertMsg = document.getElementById('alert-message');
 let closeBtn = document.getElementById('close-alert');
