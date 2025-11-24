@@ -1,38 +1,72 @@
-🌐 Personal Portfolio Website
-Welcome to my personal portfolio — a place to showcase my skills, projects, and journey as a student developer.
+🌐 My Personal Portfolio
 
-📌 About This Site
-This is a clean, responsive, and modern portfolio with a dark/light theme toggle. It provides a quick view of my work, skills, and easy ways to connect with me.
+This is my personal portfolio website where I share a little about myself, the skills I’m learning, and the projects I’m working on.
+I built this site so people can see what I do in one place and contact me easily.
+___________________________________________________________________________________________________________________________________________________________________________________________
+🚀 Live Website
 
-🧾 Sections Included
-👋 About Me
-🛠 Skills
-🏅 Projects
-📬 Contact
+Click here to visit my portfolio:
+https://vansh935.github.io/portfolio_web/
+___________________________________________________________________________________________________________________________________________________________________________________________
+👋 About This Project
 
-🌟 Features
-→ Fully responsive for all devices
-→ Dark/Light mode toggle with system preference detection (prefers-color-scheme)
-→ Auto-closing vertical menu toggle for smoother navigation
-→ Clean and simple design
-→ Custom alert box for better user interaction
-→ Built with pure HTML, CSS, and JavaScript
+I created this portfolio using HTML, CSS, and JavaScript.
+My goal was to make it clean, simple, and easy to use — whether someone is on a phone, tablet, or computer.
 
-🔄 Recent Updates
-→ Added custom alert box for navbar clicks
-→ Alert prevents unnecessary clicks if already on the same section
-→ Improved responsive design for the alert box
-→ Small UI adjustments for a cleaner look
-→ Optimized code structure for better readability
-→ Implemented prefers-color-scheme to match system theme automatically
-→ Added auto-closing behavior to the vertical menu toggle
+The website includes:
 
-🛠 Built Using
-HTML5
-CSS3
+A short introduction about me
+
+The skills I'm learning
+
+My projects
+
+A way to contact me
+___________________________________________________________________________________________________________________________________________________________________________________________
+✨ What’s Inside
+
+Here are some things I added to make the website better:
+
+Works well on mobile, tablet, and desktop
+
+Light and dark mode (also follows your system theme)
+
+A navigation menu that closes automatically on mobile
+
+A small alert box to improve the user experience
+
+A clean and simple overall design
+___________________________________________________________________________________________________________________________________________________________________________________________
+🔄 Recent Improvements
+
+I update the site whenever I learn something new. Recently, I added:
+
+A custom alert for navigation
+
+Better spacing and layout for small screens
+
+Cleaner and more organized code
+
+Automatic system theme support (dark/light mode)
+___________________________________________________________________________________________________________________________________________________________________________________________
+🛠 Tools I Used
+
+HTML
+
+CSS
+
 JavaScript
 
-🌍 Live Website
-🔗 View My Portfolio Website
+Git & GitHub
 
-I hope you enjoy exploring my portfolio as much as I enjoyed building it. Let’s connect and create something amazing together!
+VS Code
+___________________________________________________________________________________________________________________________________________________________________________________________
+🚀 Projects
+Weather App
+
+A simple weather app that shows real-time weather using an API.
+More projects will be added as I continue learning and building.
+___________________________________________________________________________________________________________________________________________________________________________________________
+❤️ About This Work
+
+I created this portfolio to improve my skills and to have something meaningful to share with others. I’ll keep updating it with new features and projects as I grow.
